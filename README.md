@@ -26,4 +26,5 @@ redis-cli
     <li>msa-weather-collection-server：天气预报系统微服务架构之天气数据采集微服务</li>
     <li>msa-weather-data-server：天气项目微服务架构之天气数据API微服务</li>
     <li>msa-weather-report-server：天气预报系统微服务架构之天气预报微服务</li>
+    <li>msa-weather-city-server：天气预报系统微服务架构之城市列表API微服务</li>
 </ol>

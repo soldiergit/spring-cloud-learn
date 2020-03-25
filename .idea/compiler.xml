@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="micro-weather-basic" />
+        <module name="msa-weather-city-server" />
         <module name="msa-weather-collection-server" />
         <module name="msa-weather-data-server" />
         <module name="msa-weather-report-server" />
@@ -17,6 +18,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="micro-weather-basic" options="-parameters" />
+      <module name="msa-weather-city-server" options="-parameters" />
       <module name="msa-weather-collection-server" options="-parameters" />
       <module name="msa-weather-data-server" options="-parameters" />
       <module name="msa-weather-report-server" options="-parameters" />
