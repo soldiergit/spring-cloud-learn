@@ -8,6 +8,7 @@
         <option value="$PROJECT_DIR$/micro-weather-basic/pom.xml" />
         <option value="$PROJECT_DIR$/msa-weather-collection-server/pom.xml" />
         <option value="$PROJECT_DIR$/msa-weather-data-server/pom.xml" />
+        <option value="$PROJECT_DIR$/msa-weather-report-server/pom.xml" />
       </list>
     </option>
   </component>
