@@ -24,4 +24,5 @@ redis-cli
 <ol>
     <li>micro-weather-basic：天气项目单体架构</li>
     <li>msa-weather-collection-server：天气预报系统微服务架构之天气数据采集微服务</li>
+    <li>msa-weather-data-server：天气项目微服务架构之天气数据API微服务</li>
 </ol>
