@@ -12,6 +12,11 @@
         <option value="$PROJECT_DIR$/msa-weather-city-server/pom.xml" />
         <option value="$PROJECT_DIR$/micro-weather-eureka-server/pom.xml" />
         <option value="$PROJECT_DIR$/micro-weather-eureka-client/pom.xml" />
+        <option value="$PROJECT_DIR$/msa-weather-city-client/pom.xml" />
+        <option value="$PROJECT_DIR$/msa-weather-collection-client/pom.xml" />
+        <option value="$PROJECT_DIR$/msa-weather-data-client/pom.xml" />
+        <option value="$PROJECT_DIR$/msa-weather-report-client/pom.xml" />
+        <option value="$PROJECT_DIR$/micro-weather-eureka-client-feign/pom.xml" />
       </list>
     </option>
   </component>
