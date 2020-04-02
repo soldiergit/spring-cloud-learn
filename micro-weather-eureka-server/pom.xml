@@ -9,11 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.soldier</groupId>
-    <!-- 服务端：集成EurekaServer，实现服务的注册与发现 -->
     <artifactId>micro-weather-eureka-server</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>micro-weather-eureka-server</name>
-    <description>Demo project for Spring Boot</description>
+    <description>高可用服务注册中心，集成EurekaServer，实现服务的注册与发现</description>
 
     <properties>
         <java.version>1.8</java.version>

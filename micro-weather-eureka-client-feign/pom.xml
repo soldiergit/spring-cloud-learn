@@ -9,11 +9,11 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.soldier</groupId>
-    <!-- 客户端：实现服务的注册与发现下集成feign -->
+    <!-- 一个eureka客户端，使用Feign成为微服务消费者实例 -->
     <artifactId>micro-weather-eureka-client-feign</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>micro-weather-eureka-client-feign</name>
-    <description>Demo project for Spring Boot</description>
+    <description>一个eureka客户端，使用Feign成为微服务消费者实例</description>
 
     <properties>
         <java.version>1.8</java.version>

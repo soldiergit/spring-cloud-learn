@@ -9,11 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.soldier</groupId>
-    <!-- 客户端：天气你预报系统微服务架构之天气数据采集微服务-->
     <artifactId>msa-weather-collection-client</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>msa-weather-collection-client</name>
-    <description>集成Eureka客户端</description>
+    <description>天气预报系统微服务架构之天气数据采集微服务(eureka客户端)</description>
 
     <properties>
         <java.version>1.8</java.version>
@@ -44,12 +43,6 @@
             <artifactId>spring-boot-starter-quartz</artifactId>
             <version>2.2.5.RELEASE</version>
         </dependency>
-        <!-- spring web -->
-        <!--<dependency>-->
-            <!--<groupId>org.springframework.boot</groupId>-->
-            <!--<artifactId>spring-boot-starter-web</artifactId>-->
-        <!--</dependency>-->
-
         <!-- eureka-client -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
@@ -60,6 +53,8 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
+
+        <!-- 该依赖用于测试阶段 -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>

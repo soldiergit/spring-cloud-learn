@@ -12,7 +12,7 @@
     <artifactId>micro-weather-basic</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>micro-weather-basic</name>
-    <description>micro-weather-basic</description>
+    <description>天气项目单体架构</description>
 
     <properties>
         <java.version>1.8</java.version>

@@ -1,11 +1,14 @@
-package com.soldier.services;
+package com.soldier.service;
 
+import com.soldier.vo.City;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 
+import java.util.List;
+
 /**
  * @Author soldier
- * @Date 20-3-31 下午4:21
+ * @Date 20-4-2 上午8:43
  * @Email:583406411@qq.com
  * @Version 1.0
  * @Description:城市信息列表API服务消费者
@@ -16,5 +19,5 @@ import org.springframework.web.bind.annotation.GetMapping;
 public interface CityClient {
 
     @GetMapping("/cities")
-    String cityList();
+    List<City> cityList();
 }
