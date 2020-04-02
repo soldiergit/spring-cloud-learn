@@ -37,7 +37,7 @@ public class WeatherDataSyncJob extends QuartzJobBean {
         // 获取城市列表
         List<City> cityList = null;
         try {
-            // TODO 未实现：改为城市数据API微服务来提供数据
+            // 城市数据API微服务来提供数据
             cityList = cityClient.cityList();
         } catch (Exception e) {
             LOGGER.error("获取城市列表失败", e);

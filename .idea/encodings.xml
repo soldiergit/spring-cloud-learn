@@ -7,6 +7,7 @@
     <file url="file://$PROJECT_DIR$/micro-weather-eureka-server" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/msa-weather-city-client" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/msa-weather-collection-client" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/msa-weather-collection-client-feign" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/msa-weather-data-client" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/msa-weather-report-client" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/msa-weather-report-client-feign" charset="UTF-8" />

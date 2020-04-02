@@ -30,5 +30,6 @@ redis-cli
     <li>msa-weather-report-client：天气预报系统微服务架构之天气预报微服务(eureka客户端)</li>
     <li>msa-weather-city-client：天气预报系统微服务架构之城市列表API微服务(eureka客户端)</li>
     <li>micro-weather-eureka-client-feign：一个eureka客户端，使用Feign成为微服务消费者实例</li>
+    <li>msa-weather-collection-client-feign：天气数据采集微服务使用Feign(eureka client+Feign)</li>
     <li>msa-weather-report-client-feign：天气预报微服务使用Feign(eureka client+Feign)</li>
 </ol>

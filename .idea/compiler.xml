@@ -12,6 +12,7 @@
         <module name="micro-weather-eureka-server" />
         <module name="msa-weather-city-client" />
         <module name="msa-weather-collection-client" />
+        <module name="msa-weather-collection-client-feign" />
         <module name="msa-weather-data-client" />
         <module name="msa-weather-report-client" />
         <module name="msa-weather-report-client-feign" />
@@ -27,6 +28,7 @@
       <module name="micro-weather-eureka-server" options="-parameters" />
       <module name="msa-weather-city-client" options="-parameters" />
       <module name="msa-weather-collection-client" options="-parameters" />
+      <module name="msa-weather-collection-client-feign" options="-parameters" />
       <module name="msa-weather-data-client" options="-parameters" />
       <module name="msa-weather-report-client" options="-parameters" />
       <module name="msa-weather-report-client-feign" options="-parameters" />
