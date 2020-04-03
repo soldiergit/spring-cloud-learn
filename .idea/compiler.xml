@@ -9,6 +9,7 @@
         <module name="micro-weather-basic" />
         <module name="micro-weather-eureka-client" />
         <module name="micro-weather-eureka-client-feign" />
+        <module name="micro-weather-eureka-client-zuul" />
         <module name="micro-weather-eureka-server" />
         <module name="msa-weather-city-client" />
         <module name="msa-weather-collection-client" />
@@ -25,6 +26,7 @@
       <module name="micro-weather-basic" options="-parameters" />
       <module name="micro-weather-eureka-client" options="-parameters" />
       <module name="micro-weather-eureka-client-feign" options="-parameters" />
+      <module name="micro-weather-eureka-client-zuul" options="-parameters" />
       <module name="micro-weather-eureka-server" options="-parameters" />
       <module name="msa-weather-city-client" options="-parameters" />
       <module name="msa-weather-collection-client" options="-parameters" />
