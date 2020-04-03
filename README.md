@@ -33,4 +33,5 @@ redis-cli
     <li>msa-weather-collection-client-feign：天气数据采集微服务使用Feign(eureka client+Feign)</li>
     <li>msa-weather-report-client-feign：天气预报微服务使用Feign(eureka client+Feign)</li>
     <li>micro-weather-eureka-client-zuul：一个eureka客户端，使用Zuul实现API网关实例</li>
+    <li>mas-weather-eureka-client-zuul：城市信息列表+天气数据微服务的API网关的路由规则(eureka client+Zuul)</li>
 </ol>

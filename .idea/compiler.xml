@@ -15,6 +15,7 @@
         <module name="msa-weather-collection-client" />
         <module name="msa-weather-collection-client-feign" />
         <module name="msa-weather-data-client" />
+        <module name="msa-weather-eureka-client-zuul" />
         <module name="msa-weather-report-client" />
         <module name="msa-weather-report-client-feign" />
         <module name="spring-cloud-learn" />
@@ -32,6 +33,7 @@
       <module name="msa-weather-collection-client" options="-parameters" />
       <module name="msa-weather-collection-client-feign" options="-parameters" />
       <module name="msa-weather-data-client" options="-parameters" />
+      <module name="msa-weather-eureka-client-zuul" options="-parameters" />
       <module name="msa-weather-report-client" options="-parameters" />
       <module name="msa-weather-report-client-feign" options="-parameters" />
     </option>
