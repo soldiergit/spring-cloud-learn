@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="micro-weather-basic" />
+        <module name="micro-weather-config-server" />
         <module name="micro-weather-eureka-client" />
         <module name="micro-weather-eureka-client-feign" />
         <module name="micro-weather-eureka-client-zuul" />
@@ -26,6 +27,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="micro-weather-basic" options="-parameters" />
+      <module name="micro-weather-config-server" options="-parameters" />
       <module name="micro-weather-eureka-client" options="-parameters" />
       <module name="micro-weather-eureka-client-feign" options="-parameters" />
       <module name="micro-weather-eureka-client-zuul" options="-parameters" />

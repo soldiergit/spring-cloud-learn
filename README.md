@@ -35,4 +35,5 @@ redis-cli
     <li>micro-weather-eureka-client-zuul：一个eureka客户端，使用Zuul实现API网关实例</li>
     <li>mas-weather-eureka-client-zuul：城市信息列表+天气数据微服务的API网关的路由规则(eureka client+Zuul)</li>
     <li>msa-weather-report-client-feign-gateway：天气预报微服务重构：使用API网关</li>
+    <li>micro-weather-config-server：spring cloud config server端实例（eureka client）</li>
 </ol>
