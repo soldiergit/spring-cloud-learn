@@ -24,6 +24,7 @@
         <option value="$PROJECT_DIR$/msa-weather-report-client-feign-gateway/pom.xml" />
         <option value="$PROJECT_DIR$/micro-weather-config-server/pom.xml" />
         <option value="$PROJECT_DIR$/micro-weather-config-client/pom.xml" />
+        <option value="$PROJECT_DIR$/micro-weather-eureka-client-feign-hystrix/pom.xml" />
       </list>
     </option>
   </component>

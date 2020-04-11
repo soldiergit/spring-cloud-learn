@@ -9,10 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.soldier</groupId>
-    <artifactId>micro-weather-config-client</artifactId>
+    <artifactId>micro-weather-eureka-client-feign-hystrix</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>micro-weather-config-client</name>
-    <description>spring cloud config client端实例（eureka client）</description>
+    <name>micro-weather-eureka-client-feign</name>
+    <description>一个hystrix断路器实例（eureka client、Feign服务消费者）</description>
 
     <properties>
         <java.version>1.8</java.version>
@@ -31,11 +31,17 @@
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
-        <!-- spring-cloud-config-client -->
+        <!-- feign -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-config-client</artifactId>
+            <artifactId>spring-cloud-starter-openfeign</artifactId>
             <version>2.2.2.RELEASE</version>
+        </dependency>
+
+        <!-- hystrix断路器 -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-hystrix</artifactId>
         </dependency>
 
         <!-- 该依赖用于测试阶段 -->
