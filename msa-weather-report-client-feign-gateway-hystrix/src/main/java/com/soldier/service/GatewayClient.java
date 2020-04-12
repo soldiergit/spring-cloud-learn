@@ -14,11 +14,14 @@ import java.util.List;
  * @Email:583406411@qq.com
  * @Version 1.0
  * @Description:
- * @Description:API网关路由配置规则微服务消费者
+ * @Description:API网关路由配置规则微服务消费者----》弃用
  *      首先通过@FeignClient指定被消费服务的名称
  *      其次通过@GetMapping来调用该服务的接口,被消费的服务怎么定义就怎么写
+ * hystrix断路器：
+ *      在feign client中，可以不用想【micro-weather-eureka-client-feign-hystrix】一样方法上使用[@HystrixCommand(fallbackMethod = "xxx")]
+ *      可以直接在@FeignClient指定被消费服务的名称时直接声明指定fallback类
  */
-@FeignClient("msa-weather-eureka-client-zuul")
+@FeignClient(value = "msa-weather-eureka-client-zuul", fallback = GatewayClientFallback.class)
 public interface GatewayClient {
 
     /**

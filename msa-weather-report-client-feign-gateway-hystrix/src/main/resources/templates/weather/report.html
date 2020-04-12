@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <!-- bootstrap -->
+    <!-- Required meta tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>黄结的天气预报</title>
+</head>
+<body>
+<div class="container">
+    <!--后台有自定义数据返回，不用担心-->
+    <div class="row">
+        <h3 th:text="${reportModel.title}">soldier</h3>
+        <select class="custom-select" id="selectCityId">
+            <option th:each="city : ${reportModel.cityList}"
+                    th:value="${city.cityId}"
+                    th:text="${city.cityName}"
+                    th:selected="${city.cityId eq reportModel.cityId}"></option>
+        </select>
+    </div>
+    <!--服务宕机时会返回空-->
+    <div th:if="${reportModel.report} != null">
+        <div class="row">
+            <h1 class="text-success" th:text="${reportModel.report.city}">深圳</h1>
+        </div>
+        <div class="row">
+            <p>空气质量指数：<span th:text="${reportModel.report.aqi}"></span></p>
+        </div>
+        <div class="row">
+            <p>高温情况：<span th:text="${reportModel.report.ganmao}"></span></p>
+        </div>
+        <div class="row">
+            <p>温度：<span th:text="${reportModel.report.wendu}"></span></p>
+        </div>
+        <h2>昨日天气：</h2>
+        <div class="row">
+            <div class="card border-info">
+                <div class="card-body">
+                    <p class="card-text text-info" th:text="${reportModel.report.yesterday.date}">日期星期</p>
+                    <p class="card-text" th:text="${reportModel.report.yesterday.high}">高温</p>
+                    <p class="card-text" th:text="${reportModel.report.yesterday.fx}">风向</p>
+                    <p class="card-text" th:text="${reportModel.report.yesterday.fl}">风力</p>
+                    <p class="card-text" th:text="${reportModel.report.yesterday.type}">类型：阴、晴、多云...</p>
+                </div>
+            </div>
+        </div>
+        <h2>未来天气情况：</h2>
+        <div class="row">
+            <div class="card border-info" th:each="forecast : ${reportModel.report.forecast}">
+                <div class="card-body">
+                    <p class="card-text text-info" th:text="${forecast.date}">日期星期</p>
+                    <p class="card-text" th:text="${forecast.high}">高温</p>
+                    <p class="card-text" th:text="${forecast.fengli}">风力</p>
+                    <p class="card-text" th:text="${forecast.low}">低温</p>
+                    <p class="card-text" th:text="${forecast.fengxiang}">风向</p>
+                    <p class="card-text" th:text="${forecast.type}">类型：阴、晴、多云...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div th:if="${reportModel.report} == null">
+        <div class="row">
+            <p>天气数据API微服务暂不可用！</p>
+        </div>
+    </div>
+</div>
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+<!-- Optional JavaScript -->
+<script type="text/javascript" th:src="@{/js/weather/report.js}"></script>
+</body>
+</html>
